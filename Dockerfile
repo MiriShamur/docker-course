@@ -8,14 +8,3 @@ WORKDIR /code
 RUN cd ${WORKDIR}
 EXPOSE 3000
 ENTRYPOINT ["/bin/bash"]
-
-#CMD ["/bin/bash"]
-
-
-
-
-#FROM gcc
-#COPY . /usr/src/myapp
-#WORKDIR /usr/src/myapp
-#RUN gcc -o myapp main.c
-#CMD ["./myapp"]
