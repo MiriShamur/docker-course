@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+    my-gcc:
+        image: docker-gcc:exe4
+        build: .
+        restart: always
+        volumes:
+            - ~/docker-course/lesson5/exe4/app:/code/volume
+        #ports:
+        #    - "3000:3000"
+        tty: true
